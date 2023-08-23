@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+      *{
+        margin: 0px;
+      }
+       #b{
+        width: 800px;
+        height: 560px;
+        float: left;
+        background-color:gray;
+        margin-top: 0px;
+        margin-left:0px;
+       
+       } 
+       #c{
+        width: 462px;
+        height: 560px;
+        float: left;
+        background-color:aquamarine;
+        margin-top: 0px;
+        margin-right:0px;
+       }
+    #a{
+      width: 200px;
+      height: 200px;
+      background-color: aliceblue;
+      margin-top: 180px;
+    }
+    h1{
+      font-size: 70px;
+      margin-left: 20px;    
+      margin-top: 50px;
+    }
+    h1{
+      font-family: 'Alkatra', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+    }
+    h2{
+      margin-left: 20px; 
+    }
+    h2{
+      font-family: 'Alkatra', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+    }
+    </style>
+</head>
+<body>
+    <div id="b"><h1>LOGIN  PAGE</h1>
+      <br>
+      <br>
+        <h2>ENTER YOUR USER NAME</h2>
+        <br>
+        <br>
+        <h2>ENTER YOUR PASSWORD</h2>
+  </div>
+    <div id="c"> <center><div id="a"><form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Login</button>
+  </form></div></center></div>
+</body>
+</html>
